@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Pasien Bidan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🌸 Klinik Bidan Sehat</h1>
+      <p>Sistem Data Pasien Ibu & Anak</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Selamat Datang!</h2>
+      <p>Catatan pasien untuk memantau kesehatan ibu & anak dengan lebih baik.</p>
+      <button onclick="document.getElementById('formSection').scrollIntoView({behavior:'smooth'})">Tambah Pasien</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=500" alt="Ibu dan Anak">
+    </div>
+  </section>
+
+  <!-- Form Pasien -->
+  <section id="formSection" class="form-section">
+    <h2>📝 Input Data Pasien</h2>
+    <form id="pasienForm">
+      <label>Nama Pasien:</label>
+      <input type="text" id="nama" required>
+
+      <label>Usia Ibu (tahun):</label>
+      <input type="number" id="umur" required>
+
+      <label>Alamat:</label>
+      <input type="text" id="alamat" required>
+
+      <label>No HP:</label>
+      <input type="text" id="nohp" required>
+
+      <label>Usia Kehamilan (minggu):</label>
+      <input type="number" id="usiaHamil" min="1" max="40" required>
+
+      <button type="submit">Simpan Pasien</button>
+    </form>
+  </section>
+
+  <!-- Table Pasien -->
+<section class="table-section">
+  <h2>📋 Daftar Pasien</h2>
+  <table id="pasienTable">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Umur</th>
+        <th>Alamat</th>
+        <th>No HP</th>
+        <th>Usia Hamil</th>
+        <th>Perkiraan Melahirkan</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data muncul otomatis lewat JS -->
+    </tbody>
+  </table>
+</section>
+
+
+  <footer>
+    <p>© 2025 Klinik Bidan Sehat | Semua Hak Dilindungi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

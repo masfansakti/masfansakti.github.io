@@ -1,0 +1,162 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  background: #fff0f5;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #ff1493;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Form */
+.form-section {
+  padding: 2rem 5%;
+  background: #ffe4e1;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+form input, form button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ff1493;
+}
+
+/* Table */
+.table-section {
+  padding: 2rem 5%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 1rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+thead {
+  background: #ff69b4;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #ffe4e1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #ffb6c1;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background: #ffa500;
+}
+
+.edit-btn:hover {
+  background: #cc8400;
+}
+
+.delete-btn {
+  background: #ff4444;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
